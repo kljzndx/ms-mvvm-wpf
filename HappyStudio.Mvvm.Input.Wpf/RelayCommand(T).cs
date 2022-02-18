@@ -9,6 +9,7 @@
 
 using System;
 using System.Runtime.CompilerServices;
+using System.Windows.Input;
 using CommunityToolkit.Mvvm.Input;
 
 namespace HappyStudio.Mvvm.Input.Wpf
@@ -33,7 +34,11 @@ namespace HappyStudio.Mvvm.Input.Wpf
         private readonly Predicate<T?>? canExecute;
 
         /// <inheritdoc/>
-        public event EventHandler? CanExecuteChanged;
+        public event EventHandler? CanExecuteChanged
+        {
+            add => CommandManager.RequerySuggested += value;
+            remove => CommandManager.RequerySuggested -= value;
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="RelayCommand{T}"/> class that can always execute.
@@ -64,7 +69,7 @@ namespace HappyStudio.Mvvm.Input.Wpf
         /// <inheritdoc/>
         public void NotifyCanExecuteChanged()
         {
-            CanExecuteChanged?.Invoke(this, EventArgs.Empty);
+            CommandManager.InvalidateRequerySuggested();
         }
 
         /// <inheritdoc/>
