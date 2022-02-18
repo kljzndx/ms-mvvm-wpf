@@ -1,3 +1,5 @@
+// The code is edited from https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/7.1.2/Microsoft.Toolkit.Mvvm/Input
+
 // Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 // See the LICENSE file in the project root for more information.
