@@ -8,9 +8,13 @@
     <Description>WPF extension for CommunityToolkit.Mvvm.Input</Description>
     <Copyright>Copyright 李继龙 2022</Copyright>
     <PackageProjectUrl>https://github.com/kljzndx/ms-mvvm-wpf</PackageProjectUrl>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageTags>mvvm;wpf;command;RelayCommand;HappyStudio;CommunityToolkit.Mvvm;CommunityToolkit.Mvvm.Input</PackageTags>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../LICENSE.md" Pack="true" PackagePath=""/>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="7.1.2" />
