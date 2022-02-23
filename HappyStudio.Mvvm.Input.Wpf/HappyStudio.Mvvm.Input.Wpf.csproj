@@ -4,12 +4,13 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <Version>1.0.1</Version>
     <Authors>快乐工作室</Authors>
     <Description>WPF extension for CommunityToolkit.Mvvm.Input</Description>
     <Copyright>Copyright 李继龙 2022</Copyright>
     <PackageProjectUrl>https://github.com/kljzndx/ms-mvvm-wpf</PackageProjectUrl>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
-    <PackageTags>mvvm;wpf;command;RelayCommand;HappyStudio;CommunityToolkit.Mvvm;CommunityToolkit.Mvvm.Input</PackageTags>
+    <PackageTags>mvvm;wpf;command;RelayCommand;HappyStudio;CommunityToolkit.Mvvm;CommunityToolkit.Mvvm.Input;CommunityToolkit.Mvvm.Input.Wpf</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
